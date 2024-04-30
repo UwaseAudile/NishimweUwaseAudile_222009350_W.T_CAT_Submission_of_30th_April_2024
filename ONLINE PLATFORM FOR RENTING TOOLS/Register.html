@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <style>
+     *, *::before, *::after {
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgrey;
+}
+.audi{
+    height: 40rem;
+    width: 45%;
+    border-radius: 5rem;
+    background-color: lightskyblue;
+    align-items: center;
+      justify-content: center;
+    padding: 1rem;
+}
+.audi1 form{
+    float: center;
+    justify-content: center;
+  margin: 700auto;
+  color: black;
+}
+.audi1 form input{
+    border-radius: 10rem;
+    border: 2px solid #000;
+    background-color:ghostwhite;
+    padding: 0.5rem;
+    margin-bottom: 7px;
+}
+.audi1 form  input#login{
+    text-align: center;
+    width: 5rem;
+    color: black;
+    background-color: black;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.audi1 form input#login:hover{
+    width: 7rem;
+    color: pink;
+    background-color: green;
+    border: 1px solid yellow;
+    transition: 1s;
+}
+.log{
+    text-align: center;
+    width: 5rem;
+    color: green;
+    background-color: pink;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5rem;
+    padding: 0.5rem;
+}
+.log:hover{
+    width: 7rem;
+    color: black;
+    background-color: green;
+    border: 1px solid yellow;
+    transition: 1s;
+}
+.logo{
+    height: 100px;
+    width: 200px;
+    
+  
+  </style>
+</head>
+<body bgcolor="black">
+  <section class="audi">
+        <div class="audi1">
+  <p><h1 style="color: darkgreen; text-align: center; font-family: Elephant; font-weight: bold; ">Online Renting Tools System</h1></p>
+  <br>
+  <center> 
+    <form action="register.php" method="post">
+      <label style="font-weight: bold; font-size: 24px; color: blue;"><u>REGISTRATION FORM</u></label><br><br>
+      <label style="font-weight: bold;">FIRST NAME</label>
+      <input type="text" name="fname" placeholder="Enter your first name" required><br><br>
+      <label style="font-weight: bold;">LAST NAME</label>
+      <input type="text" name="lname" placeholder="Enter your last name" required><br><br>
+      <label style="font-weight: bold;">PHONE</label>
+      <input type="text" name="Phone" placeholder="Enter your phonenumber" required><br><br>
+      <label style="font-weight: bold;">GENDER</label>
+
+      <select name="gender" class="form-control" id="gender" required>
+            <option value="">--Select Gender--</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+      <br><br>
+       <label style="font-weight: bold;">DOB</label>
+      <input type="date" name="dob"><br><br>
+      <label style="font-weight: bold;">EMAIL</label>
+      <input type="text" name="email" placeholder="Your Email" required><br><br>
+      <label style="font-weight: bold;">PASSWORD</label>
+      <input type="password" name="password" placeholder="Your Password" required><br><br>
+      <label style="font-weight: bold;">Created At</label>
+      <input type="datetime-local" name="created_at"><br><br>
+        <input class="log" type="submit" name="register" value="Register">
+        <input class="log" type="reset" name="cancel" value="Cancel">
+    </div>
+  </section>
+    </form>
+  </center>
+  <p><h3 style="color: white;"><marquee> Designed BY NISHIMWE UWASE AUDILE  &copyCopy_right_2024</marquee></h3></p>
+</body>
+</html>

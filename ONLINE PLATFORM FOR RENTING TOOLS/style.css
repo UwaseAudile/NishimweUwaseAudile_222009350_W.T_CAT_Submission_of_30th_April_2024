@@ -1,0 +1,85 @@
+ *, *::before, *::after {
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgrey;
+}
+.audi{
+    height: 30rem;
+    width: 30%;
+    border-radius: 5rem;
+    background-color: lightskyblue;
+    align-items: center;
+      justify-content: center;
+    padding: 1rem;
+}
+.audi1 form{
+    float: center;
+    justify-content: center;
+  margin: 700auto;
+  color: green;
+}
+.audi1 form input{
+    border-radius: 10rem;
+    border: 2px solid #000;
+    background-color:ghostwhite;
+    padding: 0.5rem;
+    margin-bottom: 7px;
+}
+.audi1 form  input#login{
+    text-align: center;
+    width: 5rem;
+    color: black;
+    background-color: black;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.audi1 form input#login:hover{
+    width: 7rem;
+    color: pink;
+    background-color: green;
+    border: 1px solid yellow;
+    transition: 1s;
+}
+.log{
+    text-align: center;
+    width: 5rem;
+    color: green;
+    background-color: pink;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5rem;
+    padding: 0.5rem;
+}
+.log:hover{
+    width: 7rem;
+    color: black;
+    background-color: green;
+    border: 1px solid yellow;
+    transition: 1s;
+}
+.logo{
+    height: 100px;
+    width: 200px;
+    
+    
+}
+.login-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+}

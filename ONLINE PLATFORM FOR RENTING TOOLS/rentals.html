@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Platform for Renting Tools</title>
+    <style>
+        /* Common CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightpink;
+        
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: lightcoral;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: darkcyan;
+        }
+        /* Link styles */
+        a {
+            padding: 10px;
+            color: white;
+            background-color: pink;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:link {
+            color: brown;
+        }
+        a:hover {
+            background-color: white;
+        }
+        a:active {
+            background-color: red;
+        }
+        /* Form styles */
+        button.btn {
+            margin-left: 15px;
+            margin-top: 4px;
+            background-color: blue;
+            border: none;
+        }
+        input.form-control {
+            width: 200px; /* Adjust width as needed */
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Online Platform for Renting Tools</h1>
+</header>
+<div class="navbar">
+  <a href="home.html">Home</a>
+   <a href="user.html">Users table</a>
+      <a href="rentals.html">Rentals table</a>
+      <a href="tools.html">Tools table</a>
+      <a href="dlvman.html">Delivery men table</a>
+  
+</div>
+<section>
+    <h2>List of Tools</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tool ID</th>
+                <th>Tool Name</th>
+                <th>Description</th>
+                <th>Price per Day</th>
+                <th>Available</th>
+                <th>Owner ID</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Hammer</td>
+                <td>A basic tool for driving and removing nails.</td>
+                <td>5.00</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2024-04-24 13:30:31</td>
+                <td>Edit | Copy | Delete</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Drill</td>
+                <td>A tool used for drilling holes in various materials.</td>
+                <td>10.00</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2024-04-24 13:30:31</td>
+                <td>Edit | Copy | Delete</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Saw</td>
+                <td>A tool for cutting wood or other materials.</td>
+                <td>8.00</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2024-04-24 13:30:31</td>
+                <td>Edit | Copy | Delete</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Wedding dresses</td>
+                <td>For the contemporary bride, modern wedding dresses...</td>
+                <td>100.00</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2024-04-11 10:32:00</td>
+                <td>Edit | Copy | Delete</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pliers</td>
+                <td>A hand tool used to hold objects firmly or for bending and compressing materials.</td>
+                <td>100.00</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2024-04-08 17:25:00</td>
+                <td>Edit | Copy | Delete</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Rental Form</h2>
+    <form method="post" action="rental.php">   
+        <label for="rental_id">Rental ID:</label>
+        <input type="number" id="rental_id" name="rental_id"><br><br>
+        <label for="tool_id">Tool ID:</label>
+        <input type="number" id="tool_id" name="tool_id" required><br><br>
+        <label for="user_id">User ID:</label>
+        <input type="number" id="user_id" name="user_id" required><br><br>
+        <label for="user_name">User Name:</label>
+        <input type="text" id="user_name" name="user_name" required><br><br>
+        <label for="tool_name">Tool Name:</label>
+        <input type="text" id="tool_name" name="tool_name" required><br><br>
+        <label for="rental_start">Rental Start:</label>
+        <input type="datetime-local" id="rental_start" name="rental_start" required><br><br>
+        <label for="rental_end">Rental End:</label>
+        <input type="datetime-local" id="rental_end" name="rental_end" required><br><br>
+        <label for="total_price">Total Price:</label>
+        <input type="number" id="total_price" name="total_price" required><br><br>
+        <label for="rental_status">Rental Status:</label>
+        <select id="rental_status" name="rental_status">
+            <option value="active">Active</option>
+            <option value="completed">Completed</option>
+            <option value="cancelled">Cancelled</option>
+        </select><br><br>
+        
+        <input type="submit" name="add" value="Insert"><br><br>
+    </form>
+</section>
+
+<footer>
+    <center> 
+        <b><h2>UR CBE BIT &copy, 2024 &reg, Designed by: @Audile Uwase</h2></b>
+    </center>
+</footer>
+
+</body>
+</html>

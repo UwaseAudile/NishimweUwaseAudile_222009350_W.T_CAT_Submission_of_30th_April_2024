@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <title>tool </title>
+  <style>
+     *, *::before, *::after {
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgrey;
+}
+.audi{
+    height: 40rem;
+    width: 45%;
+    border-radius: 5rem;
+    background-color: lightskyblue;
+    align-items: center;
+      justify-content: center;
+    padding: 1rem;
+}
+.audi1 form{
+    float: center;
+    justify-content: center;
+  margin: 700auto;
+  color: black;
+}
+.audi1 form input{
+    border-radius: 10rem;
+    border: 2px solid #000;
+    background-color:ghostwhite;
+    padding: 0.5rem;
+    margin-bottom: 7px;
+}
+.audi1 form  input#login{
+    text-align: center;
+    width: 5rem;
+    color: black;
+    background-color: black;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.audi1 form input#login:hover{
+    width: 7rem;
+    color: pink;
+    background-color: green;
+    border: 1px solid yellow;
+    transition: 1s;
+}
+.log{
+    text-align: center;
+    width: 5rem;
+    color: green;
+    background-color: pink;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5rem;
+    padding: 0.5rem;
+}
+.log:hover{
+    width: 7rem;
+    color: black;
+    background-color: green;
+    border: 1px solid yellow;
+    transition: 1s;
+}
+.logo{
+    height: 100px;
+    width: 200px;
+  }
+    .form-group {
+      margin-bottom: 20px;
+    }
+  
+  </style>
+</head>
+<header>
+    <h1>Online Platform for Renting Tools</h1>
+</header>
+<div class="navbar">
+  <a href="home.html">Home</a>
+   <a href="user.html">Users table</a>
+      <a href="rentals.html">Rentals table</a>
+      <a href="tools.html">Tools table</a>
+      <a href="dlvman.html">Delivery men table</a>
+  
+</div>
+<body bgcolor="black">
+  <section class="audi">
+        <div class="audi1">
+  <p><h1 style="color: darkgreen; text-align: center; font-family: Elephant; font-weight: bold; ">Online Renting Tools System</h1></p>
+  <br>
+  <center>
+
+    <form action="tools.php" method="post">
+      <label style="font-weight: bold; font-size: 24px; color: blue;">TOOLS TABLE</label><br><br>
+      <label style="font-weight: bold;"> ENTER TOOL NAME</label>
+      <input type="text" name="tool_name"><br><br>
+      <div class="form-group">
+            <label style="font-weight: bold;" for="description">DESCRIPTION</label>
+            <textarea id="description" name="description" required></textarea>
+          </div>
+      <label style="font-weight: bold;">Price Per Day</label>
+      <input type="text" name="price_per_day" ><br><br>
+       <label style="font-weight: bold;">AVAILABLE</label>
+
+      <select name="available" class="form-control" id="available" required>
+            <option value=""> </option>
+            <option>yes</option>
+            <option>no</option>
+        </select><br><br>
+      <label style="font-weight: bold;">OWNER ID</label>
+      <input type="number" name="owner_id"><br><br>
+      <label style="font-weight: bold;">Created At</label>
+      <input type="datetime-local" name="created_at"><br><br>
+        <input class="log" type="submit" name="" value="SUBMIT">
+        <input class="log" type="reset" name="cancel" value="Cancel">
+    </div>
+  </section>
+    </form>
+  </center>
+  <p><h3 style="color: white;"><marquee> Designed BY NISHIMWE UWASE AUDILE  &copyCopy_right_2024</marquee></h3></p>
+</body>
+</html>

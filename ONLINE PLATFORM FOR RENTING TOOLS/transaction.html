@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Form</title>
+</head>
+<header>
+    <h1>Online Platform for Renting Tools</h1>
+</header>
+<div class="navbar">
+  <a href="home.html">Home</a>
+   <a href="user.html">Users table</a>
+      <a href="rentals.html">Rentals table</a>
+      <a href="tools.html">Tools table</a>
+      <a href="dlvman.html">Delivery men table</a>
+  
+</div>
+<body>
+    <h2>Transaction Form</h2>
+    <form action="submit_transaction.php" method="POST">
+        <label for="transaction_id">Transaction ID:</label><br>
+        <input type="text" id="transaction_id" name="transaction_id"><br><br>
+        
+        <label for="rental_id">Rental ID:</label><br>
+        <input type="text" id="rental_id" name="rental_id"><br><br>
+        
+        <label for="tool_id">Tool ID:</label><br>
+        <input type="text" id="tool_id" name="tool_id"><br><br>
+        
+        <label for="deliveryman_id">Deliveryman ID:</label><br>
+        <input type="text" id="deliveryman_id" name="deliveryman_id"><br><br>
+        
+        <label for="total_price">Total Price:</label><br>
+        <input type="text" id="total_price" name="total_price"><br><br>
+        
+        <label for="transaction_status">Transaction Status:</label><br>
+        <input type="text" id="transaction_status" name="transaction_status"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
